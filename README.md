@@ -30,6 +30,19 @@ To run examples:
     // Install Firebug 1.9 and restart
 
 
+TODO
+====
+
+Add-on SDK:
+
+  * Land `get unsafeWindow() ...` for `packages/addon-kit/lib/windows.js`
+
+Firebug:
+
+  * Panel tabs not being removed in extra browser windows if more than one browser window open.
+  * More: [http://code.google.com/p/fbug/source/browse/examples/firebug1.9/HelloWorldReloaded/readme.txt](http://code.google.com/p/fbug/source/browse/examples/firebug1.9/HelloWorldReloaded/readme.txt)
+
+
 Author
 ======
 
