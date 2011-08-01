@@ -1,0 +1,32 @@
+{
+    "uid": "http://github.com/cadorn/jetpack-firebug/",
+    "name": "jetpack-firebug",
+    "description": "Firebug API for Jetpack",
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git://github.com/cadorn/jetpack-firebug.git"
+        }
+    ],
+    "maintainers": [
+        {
+            "name": "Christoph Dorn",
+            "email": "christoph@christophdorn.com",
+            "web": "http://www.christophdorn.com/",
+            "alias": {
+                "github": "cadorn"
+            }
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Christoph Dorn",
+            "email": "christoph@christophdorn.com",
+            "web": "http://www.christophdorn.com/",
+            "alias": {
+                "github": "cadorn"
+            }
+        }
+    ]
+}

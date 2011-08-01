@@ -1,0 +1,14 @@
+{
+    "name": "firebug-jetpack-helloworld", 
+    "fullName": "Firebug Jetpack HelloWorld", 
+    "id": "jid1-wNfzbxFj3YiAZA", 
+    "description": "Registering a panel to display 'Hello World'",
+    "license": "MPL 1.1/GPL 2.0/LGPL 2.1", 
+    "author": "", 
+    "version": "0.1", 
+    "dependencies": [
+        "addon-kit",
+        "api-utils",
+        "jetpack-firebug"
+    ]
+}

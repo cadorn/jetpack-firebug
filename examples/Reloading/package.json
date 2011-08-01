@@ -1,0 +1,14 @@
+{
+    "name": "firebug-jetpack-reloading",
+    "fullName": "Firebug Jetpack Reloading", 
+    "id": "jid1-wHLPv2ioyWlaeA", 
+    "description": "Test module and panel registration/removal", 
+    "license": "MPL 1.1/GPL 2.0/LGPL 2.1", 
+    "author": "", 
+    "version": "0.1", 
+    "dependencies": [
+        "addon-kit", 
+        "api-utils", 
+        "jetpack-firebug"
+    ]
+}
