@@ -46,7 +46,7 @@ Add-on SDK:
 
   * Land `get unsafeWindow() ...` for `packages/addon-kit/lib/windows.js` - [https://bugzilla.mozilla.org/show_bug.cgi?id=676027](https://bugzilla.mozilla.org/show_bug.cgi?id=676027)
 
-Firebug:
+Firebug (Tracking issue: [http://code.google.com/p/fbug/issues/detail?id=4977](http://code.google.com/p/fbug/issues/detail?id=4977)):
 
   * If Firebug is detached the panel's tab is not removed.
   * Panel tabs not being removed in extra browser windows if more than one browser window open.
