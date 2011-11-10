@@ -4,7 +4,16 @@ Firebug API for Jetpack
 Use this package to build [Firebug Extensions](http://getfirebug.com/wiki/index.php/Firebug_Extensions) or interact with 
 [Firebug](http://getfirebug.com/) from your [Add-on SDK based extensions](https://addons.mozilla.org/en-US/developers/builder).
 
-Requirements:
+Initial Objectives:
+
+  * Register Firebug panels in restartless fashion
+  * Register Firebug modules in restartless fashion
+  * Log from jetpack extensions to Firebug Console
+  * Log from jetpack extensions to Firebug Tracing Console
+
+
+Requirements
+============
 
   * Firefox 8+
   * [Firebug 1.9](http://getfirebug.com/releases/firebug/1.9/)
