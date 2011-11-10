@@ -17,9 +17,7 @@ Requirements
 
   * Firefox 8+
   * [Firebug 1.9](http://getfirebug.com/releases/firebug/1.9/)
-  * [Add-on SDK 1.2 (cadorns's branch)](https://github.com/cadorn/addon-sdk/)
-    * Required patches from diff: [https://github.com/mozilla/addon-sdk/pull/157/files](https://github.com/mozilla/addon-sdk/pull/157/files)
-      * `packages/addon-kit/lib/windows.js` - `get unsafeWindow() ...` - [https://bugzilla.mozilla.org/show_bug.cgi?id=676027](https://bugzilla.mozilla.org/show_bug.cgi?id=676027)
+  * [Add-on SDK](https://github.com/mozilla/addon-sdk)
   * [FBTrace](http://getfirebug.com/wiki/index.php/FBTrace) (during development)
 
 Examples
@@ -41,10 +39,6 @@ To run examples:
 
 TODO
 ====
-
-Add-on SDK:
-
-  * Land `get unsafeWindow() ...` for `packages/addon-kit/lib/windows.js` - [https://bugzilla.mozilla.org/show_bug.cgi?id=676027](https://bugzilla.mozilla.org/show_bug.cgi?id=676027)
 
 Firebug (Tracking issue: [http://code.google.com/p/fbug/issues/detail?id=4977](http://code.google.com/p/fbug/issues/detail?id=4977)):
 
