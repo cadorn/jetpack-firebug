@@ -2,16 +2,16 @@ Firebug API for Jetpack
 =======================
 
 Use this package to build [Firebug Extensions](http://getfirebug.com/wiki/index.php/Firebug_Extensions) or interact with 
-[Firebug](http://getfirebug.com/) from your [jetpack-based extension](https://wiki.mozilla.org/Labs/Jetpack).
+[Firebug](http://getfirebug.com/) from your [Add-on SDK based extensions](https://addons.mozilla.org/en-US/developers/builder).
 
 Requirements:
 
-  * Firefox 5+
+  * Firefox 8+
   * [Firebug 1.9](http://getfirebug.com/releases/firebug/1.9/)
-  * [Add-on SDK 1.0 (cadorns's branch)](https://github.com/cadorn/addon-sdk/)
+  * [Add-on SDK 1.2 (cadorns's branch)](https://github.com/cadorn/addon-sdk/)
     * Required patches from diff: [https://github.com/mozilla/addon-sdk/pull/157/files](https://github.com/mozilla/addon-sdk/pull/157/files)
-      * `packages/addon-kit/lib/windows.js` - `get unsafeWindow() ...`
-
+      * `packages/addon-kit/lib/windows.js` - `get unsafeWindow() ...` - [https://bugzilla.mozilla.org/show_bug.cgi?id=676027](https://bugzilla.mozilla.org/show_bug.cgi?id=676027)
+  * [FBTrace](http://getfirebug.com/wiki/index.php/FBTrace) (during development)
 
 Examples
 ========
@@ -26,7 +26,7 @@ To run examples:
     cd /path/to/addon-sdk
     source bin/activate
     cd ./examples/*/
-    cfx -b /Applications/Firefox-Beta/Firefox.app/Contents/MacOS/firefox-bin --profiledir=./.ffprofile run
+    cfx -b /Applications/Firefox.app/Contents/MacOS/firefox-bin --profiledir=./.ffprofile --package-path=../.. run
     // Install Firebug 1.9 and restart
 
 
@@ -35,12 +35,16 @@ TODO
 
 Add-on SDK:
 
-  * Land `get unsafeWindow() ...` for `packages/addon-kit/lib/windows.js`
+  * Land `get unsafeWindow() ...` for `packages/addon-kit/lib/windows.js` - [https://bugzilla.mozilla.org/show_bug.cgi?id=676027](https://bugzilla.mozilla.org/show_bug.cgi?id=676027)
 
 Firebug:
 
+  * If Firebug is detached the panel's tab is not removed.
   * Panel tabs not being removed in extra browser windows if more than one browser window open.
-  * More: [http://code.google.com/p/fbug/source/browse/examples/firebug1.9/HelloWorldReloaded/readme.txt](http://code.google.com/p/fbug/source/browse/examples/firebug1.9/HelloWorldReloaded/readme.txt)
+  * "initialize" on panel is only called the first time it is registered. Not called when removed and re-registered with new instance using same name.
+  * "initialize" on module is never called.
+  * See: [http://code.google.com/p/fbug/issues/detail?id=4686](http://code.google.com/p/fbug/issues/detail?id=4686)
+  * See: [http://code.google.com/p/fbug/source/browse/examples/firebug1.9/HelloWorldReloaded/readme.txt](http://code.google.com/p/fbug/source/browse/examples/firebug1.9/HelloWorldReloaded/readme.txt)
 
 
 Author
